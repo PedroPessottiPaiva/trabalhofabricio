@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header><h1>Contato</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="curriculo.html">Currículo</a></li>
+                <li><a href="github.html">GitHub</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+
+<form action="#" method="post">
+    <label for="nome">Nome Completo:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" name="telefone" required>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label>Tipo de Pessoa:</label>
+    <input type="radio" id="fisica" name="tipo" value="fisica" required>
+    <label for="fisica">Pessoa Física</label>
+    <input type="radio" id="juridica" name="tipo" value="juridica" required>
+    <label for="juridica">Pessoa Jurídica</label>
+
+    <label for="horario">Melhor Horário de Contato:</label>
+    <select id="horario" name="horario">
+        <option value="manhã">Manhã</option>
+        <option value="tarde">Tarde</option>
+        <option value="noite">Noite</option>
+    </select>
+
+    <label for="servico">Tipo de Serviço Desejado:</label>
+    <select id="servico" name="servico" required>
+        <option value="Suporte Técnico">Suporte Técnico</option>
+        <option value="Deenvolvimento de Sites">Desenvolvimento de Sites</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="outro">Outro</option>
+    </select>
+
+    <label for="descricao">Descrição do que deseja contratar:</label>
+    <textarea id="descricao" name="descricao" rows="4" required></textarea>
+
+    <button type="submit">Enviar</button>
+</form>
+
+</body>
+</html>
